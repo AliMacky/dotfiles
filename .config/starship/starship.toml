@@ -1,0 +1,38 @@
+format = """
+$directory\
+$git_branch\
+$git_status\
+$fill\
+$lua\
+$python\
+$nodejs\
+$java\
+$rust\
+$jobs\
+$cmd_duration\
+$line_break\
+$character
+"""
+
+add_newline = false
+
+[fill]
+symbol=' '
+
+[python]
+style = 'teal'
+symbol = ' '
+format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+pyenv_version_name = true
+pyenv_prefix = ''
+
+[lua]
+symbol = ' '
+
+[nodejs]
+style = 'blue'
+symbol = ' '
+
+[rust]
+style = 'orange'
+symbol = ' '
